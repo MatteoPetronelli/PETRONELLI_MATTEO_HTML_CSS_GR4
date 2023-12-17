@@ -1,10 +1,18 @@
 @import url("https://fonts.cdnfonts.com/css/harry-potter");
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   background-color: antiquewhite;
+}
+
+h1 {
+  position: absolute;
+  font-size: 180px;
+  color: gray;
 }
 
 .nav {
@@ -24,7 +32,7 @@ body {
 }
 .nav_container li a {
   display: inline-block;
-  top: 20%;
+  top: 60%;
   text-decoration: none;
   color: rgb(105, 92, 92);
   text-align: center;
@@ -63,6 +71,7 @@ body {
 }
 
 .open-menu {
+  color: whitesmoke;
   top: 35px;
   right: 20px;
   transform: translateY(-50%);
@@ -115,12 +124,58 @@ body {
   cursor: pointer;
 }
 
+.video {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.footer {
+  padding-top: 1.7%;
+  padding-bottom: 1.7%;
+  border: 5px solid;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  height: 75px;
+  width: 99px;
+}
+
+.container {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+  gap: 10%;
+}
+
+.icon_container {
+  padding: 5px;
+  height: 50px;
+  width: 50px;
+  background-color: gray;
+  border: 1px gray;
+  border-radius: 50%;
+}
+
+.icon_space{
+  display: flex;
+  gap: 20px;
+}
+
 @media screen and (max-width: 1190px) {
   h1 {
-    font-size: 150px;
+    font-size: 100px;
   }
-  .video {
-    height: 45vh;
+  .footer {
+    flex-direction: column;
+    gap: 20px;
   }
   .nav_container li a {
     top: 0;
@@ -130,10 +185,7 @@ body {
 
 @media screen and (max-width: 880px) {
   h1 {
-    font-size: 100px;
-  }
-  .video {
-    height: 45vh;
+    font-size: 80px;
   }
   .nav_container li a {
     top: 0;
