@@ -35,14 +35,14 @@ h1 {
   gap: 10px;
 }
 
-.align{
+.align {
   display: flex;
   align-items: flex-start;
   gap: 10px;
 }
 
 img {
-  border : 5px solid #000000;
+  border: 5px solid #000000;
   border-radius: 10%;
   height: 400px;
   background-image: url(../images/blason_maisons/blason-gryffondor.png);
@@ -116,5 +116,4 @@ p {
   p {
     font-size: 25px;
   }
-
 }
