@@ -1,1 +1,9 @@
 @import url(style.css);
+
+.open-menu {
+  color: rgb(70, 56, 56);
+}
+
+.close-menu {
+  color: rgb(70, 56, 56);
+}

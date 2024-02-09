@@ -24,6 +24,10 @@ h1 {
   color: rgb(70, 56, 56);
 }
 
+.close-menu {
+  color: rgb(70, 56, 56);
+}
+
 .container-card {
   padding: 20px;
   display: flex;
