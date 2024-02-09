@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="../css/style.css" />
     <link
       rel="stylesheet"
@@ -40,6 +44,35 @@
           loop
         ></video>
       </section>
+
+      <!-- Slider main container -->
+      <div class="swiper mon-slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide slide-dw">
+            <p class="subtitle">Axe métier</p>
+            <p class="title">Développeur web</p>
+          </div>
+          <div class="swiper-slide">
+            <p class="subtitle">Axe métier</p>
+            <p class="title">Création & Design</p>
+          </div>
+          <div class="swiper-slide">
+            <p class="subtitle">Axe métier</p>
+            <p class="title">com digitale</p>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
     </main>
     <footer>
       <div class="footer">
@@ -80,5 +113,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../javascript/main.js"></script>
   </body>
 </html>

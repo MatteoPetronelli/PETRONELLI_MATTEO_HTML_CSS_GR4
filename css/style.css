@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: "Harry Potter", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -130,6 +131,51 @@ h1 {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+}
+
+.swiper-slide{
+  height: 60vh;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 100px;
+}
+
+.slide-dw{
+  background-image: url();
+  background-size: cover;
+}
+
+.subtitle{
+  color: #fff;
+  font-size: 24px;
+  text-transform: lowercase;
+  letter-spacing: 3px;
+}
+
+.title{
+  font-weight: bold;
+  font-size: 72px;
+  color: white;
+  text-transform: lowercase;
+}
+
+body .swiper-pagination-bullet{
+  width: 18px;
+  height: 18px;
+}
+
+body .swiper-pagination-bullet-active{
+  background-color: orangered;
+}
+
+body .swiper-button-next,
+body .swiper-button-prev{
+  color: orangered;
 }
 
 .footer {
