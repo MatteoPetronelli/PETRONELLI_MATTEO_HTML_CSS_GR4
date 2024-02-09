@@ -1,0 +1,70 @@
+@import url(style.css);
+
+form {
+  border: 1px solid rgba(153, 153, 153, 0.6);
+}
+
+form > div {
+  margin: 30px 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  font-size: 25px;
+  height: 40px;
+  min-width: 40%;
+}
+
+button {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  padding: 12px 30px;
+  cursor: pointer;
+}
+
+.message-error {
+  border: 1px solid rgb(212, 42, 0);
+  color: rgb(212, 42, 0);
+  background-color: rgba(212, 42, 0, 0.4);
+  padding: 16px 32px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.message-success {
+  border: 1px solid rgb(81, 150, 2);
+  color: rgb(81, 150, 2);
+  background-color: rgba(113, 212, 0, 0.4);
+  padding: 16px 32px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.success {
+  border: 1px solid rgb(81, 150, 2);
+  background-color: rgba(113, 212, 0, 0.4);
+}
+
+.message-error.visible {
+  display: block;
+}
+
+.message-success.visible {
+  display: block;
+}
+
+.top {
+  padding-top: 30px;
+}
+
+.open-menu {
+  color: rgb(70, 56, 56);
+}
+
+.close-menu {
+  color: rgb(70, 56, 56);
+}

@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/sorts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../css/form.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <title>sorts</title>
+    <title>Harry Potter</title>
   </head>
   <body>
     <header>
@@ -16,9 +20,10 @@
         <ul class="nav">
           <input type="checkbox" id="check" />
           <span class="nav_container">
-            <li><a href="index.html" class="left">index</a></li>
-            <li><a href="baguettes.html" class="center">baguettes</a></li>
-            <li><a href="mages.html" class="right">mages</a></li>
+            <li><a href="index.html" class="top">index</a></li>
+            <li><a href="mages.html">mages</a></li>
+            <li><a href="baguettes.html">baguettes</a></li>
+            <li><a href="sorts.html">sorts</a></li>
             <label for="check" class="close-menu"
               ><i class="fas fa-times"></i
             ></label>
@@ -26,56 +31,39 @@
           <label for="check" class="open-menu"
             ><i class="fas fa-bars icon"></i
           ></label>
-          <section class="video">
-            <h1>Sorts</h1>
-            <div class="video-container">
-              <video
-                id="background"
-                src="../background/background4.mp4"
-                autoplay
-                loop
-                muted
-              ></video>
-            </div>
-          </section>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="container-card">
-        <div class="align">
-          <img src="../images/gif_sorts/patronus.gif" alt="Patronus" />
-          <div>
-            <h4>Expecto Patronum</h4>
-            <p>
-              Le sortilège du Patronus est un enchantement visant à faire
-              apparaître un Patronus, un esprit protecteur, qui peut servir de
-              bouclier contre certaines créatures ou faire office de messager.
-            </p>
-          </div>
+      <div class="message-error">
+        <ul></ul>
+      </div>
+
+      <div class="message-success">Formulaire envoyé avec succès !</div>
+
+      <form action="" method="post" enctype="multipart/form-data">
+        <div>
+          <label for="pseudo">Pseudo</label>
+          <input type="text" id="pseudo" name="pseudo" />
         </div>
-        <div class="align">
-          <img src="../images/gif_sorts/Imperio.gif" alt="Imperio" />
-          <div>
-            <h4>Imperio</h4>
-            <p>
-              Le sortilège de l'Imperio est l'un des trois Sortilèges
-              Impardonnables. Il contrôle totalement la personne touchée et
-              n'est pas détectable à l'oeil nu.
-            </p>
-          </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
         </div>
-        <div class="align">
-          <img src="../images/gif_sorts/Obliviate.gif" alt="Obliviate" />
-          <div>
-            <h4>Obliviate</h4>
-            <p>
-              Le sortilège Obliviate supprime des souvenirs à celui qui le
-              subit, c'est un sortilège d'amnésie
-            </p>
-          </div>
+
+        <div>
+          <label for="password">Mot de passe</label>
+          <input type="password" id="password" name="password" />
         </div>
-      </section>
+
+        <div>
+          <label for="password2">Confirmation du mot de passe</label>
+          <input type="password" id="password2" name="password2" />
+        </div>
+
+        <button type="submit">S'inscrire</button>
+      </form>
     </main>
     <footer>
       <div class="footer">
@@ -117,6 +105,8 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../javascript/form.js"></script>
     <script src="../javascript/main.js"></script>
   </body>
 </html>

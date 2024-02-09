@@ -8,6 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
       el: ".swiper-pagination",
     },
 
+    slideEffect: {
+      slideShadows: true,
+      shadow: true,
+    },
+
     // Navigation arrows
     navigation: {
       nextEl: ".swiper-button-next",
@@ -16,6 +21,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     autoplay: {
       delay: 3000,
+      disableOnInteraction: false,
     },
+    autoplayDisableOnInteraction: true,
   });
+});
+
+document.querySelector(".dark-mode-toggle").addEventListener("click", function () {
+  document.body.classList.toggle("dark");
 });

@@ -18,12 +18,19 @@
     <header>
       <nav>
         <ul class="nav">
+          <button class="form" onclick="location.href='form.html';">
+            <img
+              src="../images/header/form_logo.png"
+              alt="form_logo"
+              class="form_logo"
+            />
+          </button>
           <input type="checkbox" id="check" />
           <span class="nav_container">
-            <li><a href="mages.html" class="left">mages</a></li>
-            <li><a href="baguettes.html" class="center">baguettes</a></li>
-            <li><a href="sorts.html" class="right">sorts</a></li>
-            <li><a href="boosters.html" class="right">boosters</a></li>
+            <li><a href="mages.html">mages</a></li>
+            <li><a href="baguettes.html">baguettes</a></li>
+            <li><a href="sorts.html">sorts</a></li>
+            <li><a href="boosters.html">boosters</a></li>
             <label for="check" class="close-menu"
               ><i class="fas fa-times"></i
             ></label>
@@ -50,17 +57,17 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide slide-dw">
-            <p class="subtitle">Axe métier</p>
-            <p class="title">Développeur web</p>
+          <div class="swiper-slide slide-1">
+            <p class="subtitle">Poudlard</p>
+            <p class="title">L'école des sorciers</p>
           </div>
-          <div class="swiper-slide">
-            <p class="subtitle">Axe métier</p>
-            <p class="title">Création & Design</p>
+          <div class="swiper-slide slide-2">
+            <p class="subtitle">Gringotts</p>
+            <p class="title">chambre forte 713</p>
           </div>
-          <div class="swiper-slide">
-            <p class="subtitle">Axe métier</p>
-            <p class="title">com digitale</p>
+          <div class="swiper-slide slide-3">
+            <p class="subtitle">enfance</p>
+            <p class="title">Backstage</p>
           </div>
         </div>
         <!-- If we need pagination -->
@@ -82,6 +89,7 @@
           class="logo"
         />
         <div class="container">
+          <button class="dark-mode-toggle">Dark mode</button>
           <a href="#">About Us</a>
           <a href="#">Press</a>
           <a href="#">FAQs</a>

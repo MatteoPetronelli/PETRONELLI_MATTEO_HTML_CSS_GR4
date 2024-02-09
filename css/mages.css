@@ -68,6 +68,11 @@ p {
   font-size: 40px;
 }
 
+img.logo,
+img.icon_container {
+  background-image: none;
+}
+
 @media screen and (max-width: 1190px) {
   h1 {
     font-size: 150px;

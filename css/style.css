@@ -16,9 +16,24 @@ h1 {
   color: gray;
 }
 
+.form {
+  display: flex;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.form_logo {
+  margin-right: 80px;
+  height: 100px;
+  pointer-events: auto;
+}
+
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
   list-style: none;
   position: relative;
@@ -33,7 +48,7 @@ h1 {
 }
 .nav_container li a {
   display: inline-block;
-  top: 60%;
+  top: 80%;
   text-decoration: none;
   color: rgb(105, 92, 92);
   text-align: center;
@@ -133,8 +148,8 @@ h1 {
   overflow: hidden;
 }
 
-.swiper-slide{
-  height: 60vh;
+.swiper-slide {
+  height: 100vh;
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -145,36 +160,47 @@ h1 {
   padding-left: 100px;
 }
 
-.slide-dw{
-  background-image: url();
+.slide-1 {
+  background-image: url(../images/swiper/slider-img1.webp);
   background-size: cover;
 }
 
-.subtitle{
+.slide-2 {
+  background-image: url(../images/swiper/slide-img2.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-3 {
+  background-image: url(../images/swiper/slide-img3.webp);
+  background-size: cover;
+}
+
+.subtitle {
   color: #fff;
   font-size: 24px;
   text-transform: lowercase;
   letter-spacing: 3px;
 }
 
-.title{
+.title {
   font-weight: bold;
   font-size: 72px;
   color: white;
   text-transform: lowercase;
 }
 
-body .swiper-pagination-bullet{
+body .swiper-pagination-bullet {
   width: 18px;
   height: 18px;
 }
 
-body .swiper-pagination-bullet-active{
+body .swiper-pagination-bullet-active {
   background-color: orangered;
 }
 
 body .swiper-button-next,
-body .swiper-button-prev{
+body .swiper-button-prev {
   color: orangered;
 }
 
@@ -216,6 +242,20 @@ a {
 .icon_space {
   display: flex;
   gap: 20px;
+}
+
+body.dark {
+  background-color: #222;
+  color: #fff;
+}
+
+body.dark p {
+  color: #fff;
+}
+
+body.dark .dark-mode-toogle {
+  background-color: #333;
+  color: #fff;
 }
 
 @media screen and (max-width: 1190px) {
