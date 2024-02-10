@@ -41,8 +41,17 @@
       </nav>
     </header>
     <main>
-      <section class="container-card">
-        <div class="align">
+      <div class="filters">
+        <ul>
+          <li class="tab Harry tab-active">Harry</li>
+          <li class="tab Hermione">Hermione</li>
+          <li class="tab Ron">Ron</li>
+          <li class="tab Malefoy">Malefoy</li>
+        </ul>
+      </div>
+
+      <div class="tab-elements">
+        <div class="content Harry active">
           <img
             src="../images/mages/HarryPotter-1-Harry-Potter.png"
             alt="Harry"
@@ -58,18 +67,7 @@
             </p>
           </div>
         </div>
-        <div class="align">
-          <img src="../images/mages/HarryPotter-1-Ron-Weasley.png" alt="Ron" />
-          <div>
-            <h4>Ron Weasley</h4>
-            <p>
-              Ronald Bilius Weasley dit Ron est le sixième fils d'Arthur et
-              Molly Weasley. Il entre à Poudlard en 1991 dans la maison
-              Gryffondor.
-            </p>
-          </div>
-        </div>
-        <div class="align">
+        <div class="content Hermione">
           <img
             src="../images/mages/HarryPotter-1-Hermione-Granger.png"
             alt="Hermione"
@@ -84,7 +82,18 @@
             </p>
           </div>
         </div>
-        <div class="align">
+        <div class="content Ron">
+          <img src="../images/mages/HarryPotter-1-Ron-Weasley.png" alt="Ron" />
+          <div>
+            <h4>Ron Weasley</h4>
+            <p>
+              Ronald Bilius Weasley dit Ron est le sixième fils d'Arthur et
+              Molly Weasley. Il entre à Poudlard en 1991 dans la maison
+              Gryffondor.
+            </p>
+          </div>
+        </div>
+        <div class="content Malefoy">
           <img
             src="../images/mages/HarryPotter-1-Drago-Malefoy.png"
             alt="Draco Malefoy"
@@ -98,7 +107,7 @@
             </p>
           </div>
         </div>
-      </section>
+      </div>
     </main>
     <footer>
       <div class="footer">
@@ -140,6 +149,12 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/vanilla.filterizr.min.js"
+      integrity="sha512-MMprw2AB5GAiQmXXEz5JYiGq2waU0iqD7Whj33m1w0V6Zzt1wyTFnr6rxWW8mfdQ/VksbUkU5c8sVGlO+3stew=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="../javascript/main.js"></script>
   </body>
 </html>

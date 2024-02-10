@@ -30,29 +30,48 @@ h1 {
   color: rgb(70, 56, 56);
 }
 
-.container-card {
-  padding: 20px;
+.tab-elements {
+  max-width: 1200px;
+  padding-top: 20px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 
-.align {
+.content {
+  display: none;
+}
+
+.active{
+  display: block;
+}
+
+.filters {
+  max-width: 1200px;
+  margin: 30px 0 0 30px;
+}
+
+.filters ul {
   display: flex;
-  align-items: flex-start;
-  gap: 10px;
+  gap: 20px;
+}
+
+.filters li {
+  color: #fff;
+  background-color: orangered;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.filters li.tab-active {
+  background-color: orange;
 }
 
 img {
   border: 5px solid #000000;
   border-radius: 10%;
   height: 400px;
-  background-image: url(../images/blason_maisons/blason-gryffondor.png);
-  background-repeat: no-repeat;
-  background-size: 800px;
-  background-position: center;
 }
 
 h4 {

@@ -27,6 +27,38 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.querySelector(".dark-mode-toggle").addEventListener("click", function () {
-  document.body.classList.toggle("dark");
+document
+  .querySelector(".dark-mode-toggle")
+  .addEventListener("click", function () {
+    document.body.classList.toggle("dark");
+  });
+
+let filterItems = document.querySelectorAll(".filters li");
+
+filterItems.forEach(function (filterItem) {
+  filterItem.addEventListener("click", function () {
+    document
+      .querySelector(".filters .tab-active")
+      .classList.remove("tab-active");
+    document
+      .querySelector(".tab-elements div.active")
+      .classList.remove("active");
+    this.classList.add("tab-active");
+    if (this.classList.contains("Harry")) {
+      document.querySelector(".tab-elements div.Harry").classList.add("active");
+    }
+    if (this.classList.contains("Hermione")) {
+      document
+        .querySelector(".tab-elements div.Hermione")
+        .classList.add("active");
+    }
+    if (this.classList.contains("Ron")) {
+      document.querySelector(".tab-elements div.Ron").classList.add("active");
+    }
+    if (this.classList.contains("Malefoy")) {
+      document
+        .querySelector(".tab-elements div.Malefoy")
+        .classList.add("active");
+    }
+  });
 });
