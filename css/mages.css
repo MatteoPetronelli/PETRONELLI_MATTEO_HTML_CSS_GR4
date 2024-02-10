@@ -58,6 +58,7 @@ h1 {
 }
 
 .filters li {
+  list-style: none;
   color: #fff;
   background-color: orangered;
   padding: 10px 20px;
